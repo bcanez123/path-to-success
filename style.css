@@ -1,0 +1,135 @@
+body {
+    background-color: #6B8FE7;
+    max-width: 450px;
+  }
+  
+  h1 {
+    font-family: helvetica;
+    font-size: 3em;
+    color: white;
+  }
+  h2 {
+    font-family: helvetica;
+    color: white;
+  }
+  
+  h3 {
+    font-family: helvetica;
+    color: #E9BB57;
+  }
+  
+  h4 {
+    font-family: helvetica;
+    color: #484FB7;
+  }
+  
+  p {
+    font-family: helvetica;
+  }
+  
+  nav {
+    background-color: #E9BB57; 
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+  }
+  
+  nav a {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    color: #484FB7;
+    font-family: helvetica;
+    font-weight: bold;
+  }
+  
+  table {
+    border: solid 1px #E9BB57;
+    background-color:#E9BB57;
+    
+  }
+  
+  th {
+    font-family: helvetica;
+    background-color: #E9BB57;
+    padding: 15px;
+  }
+  
+  td {
+    font-family: helvetica;
+    background-color: white;
+    padding: 15px;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer {
+    background-color:  #484FB7;
+    padding: 20px;
+    color: white;
+    display: flex;
+    text-align: center;
+  }
+  
+  footer a {
+    color: white;
+    padding: 30px;
+  }
+  
+  .section1 {
+    background-color: #484FB7;
+    padding: 10px;
+    color: white;
+    text-align: center;
+  }
+  
+  .section2 {
+    background-color: #484FB7;
+    padding: 20px;
+  }
+  
+  .section3 {
+    background-color: #D9526F;
+    padding: 20px;
+  }
+  
+  .section4 {
+    background-color: #484FB7;
+    padding: 20px;
+  }
+  
+  .section5 {
+    background-color: #D9526F;
+    padding: 20px;
+    color: white;
+  }
+  
+  .white_box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .container > div {
+    background-color: #f1f1f1;
+    margin: 5px;
+    width: 120px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: helvetica;
+    font-weight: bold;
+    text-align: center;
+  }
