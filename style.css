@@ -2,6 +2,7 @@
 
     /* CSS BY NAME [Bernadette Canez] */
     /* IMPORTED FONTS */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
     /* cyrillic-ext */
     /* CSS RESET */
     html, body, div, span, applet, object, iframe,
@@ -43,41 +44,65 @@
       content: none;
     }
     table {
+      border: solid 1px #E9BB57;
       border-collapse: collapse;
       border-spacing: 0;
     }
     
 
     /* ROOT VARIABLES */
+    :root {
+      font-family: "Inter", sans-serif;
+      --teal:#4CA7C0;
+      --yellow:#E9BB57;
+      --purple: #484FB7;
+      --Lavender: #6B8FE7;
+      --Pink: #D9526F;
+      --Dark-gray:#1E1E1E; 
+      --White:#ffffff;
+    }
     /* GLOBAL STYLES (mobile first/small) */
 
 body {
-    background-color: #6B8FE7;
+    background-color: var(--Lavender);
     max-width: 450px;
     margin: 0 auto;
+    line-height: normal;
+  }
+
+main {
+  background-color: var(--purple);
+}
+  header {
+    background-color: var(--purple);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: var(--White);
+    
   }
   
   h1 {
     font-family: kavoon;
     font-size: 3em;
-    color: white;
+    color: var(--White);
   }
   h2 {
     font-family: kavoon;
     font-size: 2em;
-    color: white;
+    color: var(--White);
   }
   
   h3 {
     font-family: inter;
     font-size: 1.5em;
-    color: #E9BB57;
+    color: var(--yellow);
   }
   
   h4 {
     font-family: inter;
     font-size: 1.15em;
-    color: #484FB7;
+    color: var(--purple);
   }
   
   p {
@@ -87,52 +112,174 @@ body {
   nav { 
     text-align: center;
     padding: 20px;
+    background-color: var(--yellow);
     margin: 0px;
+    text-transform: uppercase;
   }
 
   nav h2 {
-    color: black;
+    color: var(--Dark-gray);
     font-family: inter;
     font-size: 1.5em;
 
   }
   
-  nav a {
-    background-color: white;
+  nav li {
+    background-color: var(--White);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    text-decoration: none;
-    color: #484FB7;
-    font-family: helvetica;
+    color: var(--purple);
+    font-family: inter;
     font-weight: bold;
+    margin: 10px;
+  }
+
+  nav a {
+    text-decoration: none;
   }
   
   table {
-    border: solid 1px #E9BB57;
-    background-color:#E9BB57;
-    
+    border: solid 2px var(--yellow);
+    background-color: var(--yellow);
+    margin-left: auto;
+    margin-right: auto;
   }
   
   th {
     font-family: 'Inter';
-    background-color: #E9BB57;
+    background-color: var(--yellow);
     padding: 15px;
   }
   
   td {
     font-family: 'Inter';
-    background-color: white;
+    background-color: var(--White);
     padding: 15px;
+    border: solid 2px var(--yellow);
   }
   
   footer {
-    background-color:  #484FB7;
-    padding: 20px;
-    color: white;
-    display: flex;
+    background-color:  var(--purple);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: var(--White);
+    font-family: inter;
     text-align: center;
   }
 
-  
+  .services {
+    background-color: var(--White);
+    border-radius: 20px;
+    padding: 25px;
+    margin: 10px;
+  }
+
+  .scheduleNow {
+    background-color: var(--White);
+    border-radius: 15px;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    font-family: inter;
+    font-weight: bold;
+    color: var(--Dark-gray);
+    box-shadow: 5px 5px;
+    margin: auto;
+  }
+
+  .theFirstStep {
+    padding-bottom: 30px;
+  }
+
+  #takeTheFirstStep {
+    background-color: var(--Pink);
+    padding: 15px;
+    color: var(--White);
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  #ourServices {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #prices {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+  }
+
+  #whyChooseUs {
+    background-color: var(--Pink);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+
+#grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#personalizedApproach {
+  background-color: var(--teal);
+  border-radius: 15px;
+  padding: 20px;
+  font-family: inter;
+  margin: 5px;
+  text-align: center;
+  font-weight: bold;
+  width: 160px;
+}
+
+#provenResults {
+  background-color: var(--Lavender);
+  border-radius:15px;
+  padding: 20px;
+  font-family: inter;
+  margin: 5px;
+  text-align: center;
+  font-weight: bold;
+  width: 160px;
+}
+ #supportiveEnvironment {
+  background-color: var(--yellow);
+  border-radius: 15px;
+  padding: 20px;
+  font-family: inter;
+  margin: 5px;
+  text-align: center;
+  font-weight: bold;
+  width: 160px;
+ }
+ 
+ #flexibleOptions {
+  background-color: var(--White);
+  border-radius: 15px;
+  padding: 20px;
+  font-family: inter;
+  margin: 5px;
+  font-weight: bold;
+  text-align: center;
+  width: 160px;
+ }
+
+ #grid-footer {
+  display: grid;
+  grid-template-columns: auto auto;
+ }
+
+ #termsAndConditions {
+  color: var(--White);
+ }
